@@ -15,5 +15,6 @@ echo "
       Visit @TheUltroid for updates!!
 
 "
+python3 keep_alive.py &
 if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi
 if [ $SESSION1 ] ; then python3 multi_client.py ; else python3 -m pyUltroid ; fi
